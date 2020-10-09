@@ -1,10 +1,14 @@
-head{
+header{
     background-color: #396E94;
+    text-transform: capitalize;
 }  
 p{
     color: #000000;
     background-color: #E7C24F; 
+    font-family: cursive;
+    text-emphasis: none;
 }
 nav{
     text-emphasis:bold;
+    background-color: A43312;
 }
