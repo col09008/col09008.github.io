@@ -1,3 +1,10 @@
 head{
     background-color: #396E94;
 }  
+p{
+    color: #000000;
+    background-color: #E7C24F; 
+}
+nav{
+    text-emphasis:bold;
+}
