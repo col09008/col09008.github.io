@@ -1,0 +1,30 @@
+header {
+    background-color: #396E94;
+    text-transform: capitalize;
+    text-align: center;
+}  
+p {
+    color: #000000;
+    background-color: #E7C24F; 
+    font-family: cursive;
+    text-emphasis: none;
+}
+nav {
+    text-emphasis:bold;
+    background-color: A43312;
+}
+
+h2 {
+    background-color:  #A43312;
+    text-emphasis:italic;
+    font-size: smaller;
+    text-align: left;
+}
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  img{
+      display: block;
+      margin-left: auto;
+  }
