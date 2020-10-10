@@ -44,6 +44,10 @@ footer {
 img {
     display: block;
     margin-left: auto;
+    border-top: black;
+    border-bottom: black;
+    border-left: black;
+    border-right: black;
 }
 
 #content {
