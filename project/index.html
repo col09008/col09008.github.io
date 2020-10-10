@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-        <!--css style sheet, not linking up? it will if I make it an inline style-->
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,62 +11,75 @@
 </head>
 
 <body>
-    <header>
-        <h1>Temple Inn & Suites</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="#"></a>Amenities</li>
-                <li><a href="#"></a>Spotlight</li>
-                <li><a href="#"></a>Reservations</li>
-            </ul>
-        </nav>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quod molestias illo laudantium
-            repellendus atque at tenetur odit dolorem fugit blanditiis earum explicabo ducimus, necessitatibus illum
-            unde. Itaque, repuiandae laborum.
-        </p>
-    </header>
-    <main>
-        <div class="hero">
-            <picture></picture>
-        </div>
-        <section>
-            <h2>Lorem, ipsum dolor</h2>
+    <div id="content">
+        <header>
+            <h1>Temple Inn & Suites</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"></a>Home</li>
+                    <li><a href="#"></a>Amenities</li>
+                    <li><a href="#"></a>Spotlight</li>
+                    <li><a href="#"></a>Reservations</li>
+                </ul>
+            </nav>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate fugit id?
-                Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis deserunt
-                ducimus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quod molestias illo laudantium
+                repellendus atque at tenetur odit dolorem fugit blanditiis earum explicabo ducimus, necessitatibus illum
+                unde. Itaque, repuiandae laborum.
             </p>
-            <!--What am I doing wrong here? I have the image in my images folder, but it's a broken image showing up in the browser-->
-            <img src="images/templeperu.jpeg" alt="Peru Temple" />
-            <h2>Lorem, ipsum dolor</h2>
+        </header>
+        <main>
+            <div>
+                <section>
+                    <h2>Lorem, ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate
+                        fugit id?
+                        Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis
+                        deserunt
+                        ducimus.
+                    </p>
+                    <!--What am I doing wrong here? I have the image in my images folder, but it's a broken image showing up in the browser-->
+                    <img src="images/templeperu.jpeg" alt="Peru Temple" />
+                    <h2>Lorem, ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate
+                        fugit id?
+                        Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis
+                        deserunt
+                        ducimus.
+                    </p>
+                    <img id="firstImage" src="http://placekitten.com/100/100" alt="placeholder">
+                    <h2>Lorem, ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate
+                        fugit id?
+                        Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis
+                        deserunt
+                        ducimus.
+                    </p>
+                    <img src="http://placekitten.com/100/100" alt="placeholder">
+                </section>
+            </div>
+        </main>
+        <footer>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate fugit id?
-                Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis deserunt
-                ducimus.
+                "Temple Inn & Suites | Let us plan your temple trip | 215-825-9542"
             </p>
-            <img id="firstImage" src="http://placekitten.com/100/100" alt="placeholder">
-            <h2>Lorem, ipsum dolor</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate fugit id?
-                Magnam ex, cum, libero consequatur magni sequi doloribus, non eligendi aliquam quidem debitis deserunt
-                ducimus.
-            </p>
-            <img src="http://placekitten.com/100/100" alt="placeholder">
-        </section>
-    </main>
-    <footer>
-        <p>
-            "Temple Inn & Suites | Let us plan your temple trip | 215-825-9542"
-        </p>
-        <div class=social>
-            <!--Same problem here withi my images, what am I missing?-->
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube"></a>
-        </div>
-    </footer>
- 
+            <div class=social>
+                <!--Same problem here withi my images, what am I missing?-->
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Ffacebook.png?1602301347206"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Finstagram.png?1602301368507"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img
+                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Fyoutube.png?1602301386367"
+                        alt="Youtube"></a>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
