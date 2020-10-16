@@ -43,7 +43,7 @@ nav a{
 h2 {
     background-color: #A43312;
     font-style: italic;
-    font-size: 16 px;
+    font-size: 16px;
     text-align: left;
     padding: 30px;
     border: 1px solid black;
@@ -64,9 +64,6 @@ img {
     border-bottom: black;
     border-left: black;
     border-right: black;
-}
-.contact{
-    background: blanchedalmond;
 }
 ul.bp {
     list-style-type: none;
