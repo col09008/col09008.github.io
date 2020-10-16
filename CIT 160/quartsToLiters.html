@@ -9,21 +9,21 @@
         /* 
          *Defining Table:
          *Input(s): number of Quarts
-         *Processing: 1 qt = 1.057 l
+         *Processing: Divide by 1.057
          *Output(s): number of Liters
          */
         function computeLiters() {
-            let num_quarts = parseFloat(document.getElementById("NumberQuarts").value);
-            let result = (num_quarts/1.0570);
-            document.getElementById("output").innerHTML = result + "Liters";
-            alert(computeLiters)
+            let num_quarts = parseFloat(document.getElementById("NumberQuarts").value); {
+                var result = (num_quarts / 1.0570);
+            }
+            document.getElementById("output").innerHTML = result + " Liters";
         }
     </script>
+</head>
 
 <body>
-    Quarts: <input type="text" id="Quarts">
-
-    <button type="button" onclick="computeLiters();">Compute Liters</button>
+    Quarts: <input type="text" id="NumberQuarts">
+    <button type="button" onclick="computeLiters()">Compute Liters</button>
     <div id="output"></div>
 
 </body>
