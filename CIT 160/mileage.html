@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileage</title>
+    <script>
+        /* 
+         *Defining Table:
+         *Input(s): BeginningMileage, EndingMileage, Number of Gallons
+         *Processing: Subtract beginning mileage from ending mileage
+         *Output(s): Mileage in miles per gallon
+         */
+        function computeMileage() {
+            let beginning_mileage = parseFloat(document.getElementById("BeginningMileage").value);
+            let ending_mileage = parseFloat(document.getElementById("EndingMileage").value);
+            let num_gallons = parseFloat(document.getElementById("NumberofGallons").value);
+            if (num_gallons != 0) {
+                var result = (ending_mileage - beginning_mileage) / num_gallons;
+            } else {
+                var result = "No gallons, can't divide by zero!";
+                alert(computeMileage);
+            }
+
+            let result = (ending_mileage - beginning_mileage) / num_gallons;
+
+            document.getElementById("output").innerHTML = result + "MPG";
+        }
+    </script>
+
+<body>
+    Beginning Mileage: <input type="text" id="BeginningMileage">
+    Ending Mileage: <input type="text" id="EndingMileage">
+    Number of Gallons: <input type="text" id="NumberofGallons">
+
+    <button type="button" onclick="computeMileage();">Compute Mileage</button>
+    <div id="output"></div>
+
+</body>
+
+</html>

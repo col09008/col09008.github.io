@@ -11,26 +11,39 @@
 </head>
 
 <body>
-    <div id="content">
+    <article>
         <header>
-            <h1>Temple Inn & Suites</h1>
+            <picture>
+                <img src="images/templeiconinn.png" alt="Temple Icon Inn" height="100" width="100">
+            </picture>
+            <section class="heading">
+                <h1>Temple Inn and Suites</h1>
+                <div class="motto">Your home away from home!</div> 
+            </section>
             <nav>
-                <ul>
+                <ul class="bp">
                     <li><a href="index.html"></a>Home</li>
                     <li><a href="#"></a>Amenities</li>
                     <li><a href="#"></a>Spotlight</li>
                     <li><a href="#"></a>Reservations</li>
                 </ul>
             </nav>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quod molestias illo laudantium
-                repellendus atque at tenetur odit dolorem fugit blanditiis earum explicabo ducimus, necessitatibus illum
-                unde. Itaque, repuiandae laborum.
-            </p>
         </header>
+    </article>
+    <div>
+
         <main>
             <div>
                 <section>
+                    <div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quod molestias illo
+                            laudantium
+                            repellendus atque at tenetur odit dolorem fugit blanditiis earum explicabo ducimus,
+                            necessitatibus illum
+                            unde. Itaque, repuiandae laborum.
+                        </p>
+                    </div>
                     <h2>Lorem, ipsum dolor</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam numquam illo ratione voluptate
@@ -39,7 +52,6 @@
                         deserunt
                         ducimus.
                     </p>
-                    <!--What am I doing wrong here? I have the image in my images folder, but it's a broken image showing up in the browser-->
                     <img src="images/templeperu.jpeg" alt="Peru Temple" />
                     <h2>Lorem, ipsum dolor</h2>
                     <p>
@@ -66,18 +78,32 @@
             <p>
                 "Temple Inn & Suites | Let us plan your temple trip | 215-825-9542"
             </p>
+            <p>
+
+            </p>
+            <!--How do I get images side by side? html or css? -->
             <div class=social>
-                <!--Same problem here withi my images, what am I missing?-->
-                <a href="https://www.facebook.com/" target="_blank"><img
-                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Ffacebook.png?1602301347206"
-                        alt="Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img
-                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Finstagram.png?1602301368507"
-                        alt="Instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img
-                        src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Fyoutube.png?1602301386367"
-                        alt="Youtube"></a>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Ffacebook.png?1602301347206"
+                            alt="Facebook"></a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Finstagram.png?1602301368507"
+                            alt="Instagram"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Fyoutube.png?1602301386367"
+                            alt="Youtube"></a>
+                </div>
             </div>
+            <p class="Contact">
+                Contact: 4810 Montgomery Ln #500 Bethseda, MD 20814
+                999-999-9999
+                templeinnsuites@tis.com
+            </p>
         </footer>
     </div>
 </body>
