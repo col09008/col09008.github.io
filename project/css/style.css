@@ -2,24 +2,20 @@ html{
     font-size: 75%; 
 }
 header {
-    background-color: #396E94;
-    text-transform: capitalize;
-    text-align: center; 
+    background-color: #C9CBA3;
+    text-transform: capitalize; 
     display: flex; 
-    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
 }
 body {
-    background-color: #fffdd0;
-    padding: 30px; 
+    background-color: #FFE1A8; 
 	margin: 0;
     font-size: 16px;
-    text-transform: capitalize;  
-    text-align: center;
-    display: inline;
 }
 p {
     color: #000000;
-    background-color: #E7C24F;
+    background-color: #F1A782;
     font-family: Arial, Helvetica, cursive;
     text-emphasis: none;
     margin-right: auto;
@@ -28,32 +24,34 @@ p {
 }
 
 nav {
-    background-color: #E7C24F;
+    background-color: #DCAB6B;
     font-weight: bold;
-    text-align: right;
     color: black;
     font-variant: small-caps;
-    display: inline;
-    font-size: 1rem; 
+    font-size: 15px; 
 }
 nav a{
     color: darkcyan;
+    display: block; 
+    padding: 5px; 
 }
 
 h2 {
-    background-color: #A43312;
+    background-color: #AA5551;
     font-style: italic;
-    font-size: 16px;
+    font-size: 25px;
     text-align: left;
-    padding: 30px;
+    padding: 15px;
     border: 1px solid black;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-right: 150px;
     margin-left: 80px;
+    align-items: flex-end
+
 }
 main{
-    background-color: whitesmoke;
+    background-color: #FFF1D6;
 }
 
 
@@ -67,4 +65,11 @@ img {
 }
 ul.bp {
     list-style-type: none;
+    display: flex; 
+    margin: 0; 
+}
+
+.motto {
+    font-size: small; 
+    text-align: center; 
 }
