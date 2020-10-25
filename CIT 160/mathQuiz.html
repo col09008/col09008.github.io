@@ -21,29 +21,33 @@
             let solution = parseInt(document.getElementById("solution").value);
             let message = "Incorrect. Try Again!";
             message = "Please don't divide by zero.";
-        }
 
         if ("operator" == "+") {
-            let sumofNumbers = "firstNumber" + "secondNumber";
-            if (sumofNumbers == "solution");
+            let sumofNumbers = firstNumber + secondNumber;
+            if (sumofNumbers == solution){
             message = "Correct! Good job!";
+            }
         } else if ("operator" == "-") {
-            let sumofNumbers = "firstNumber" - "secondNumber";
-            if (sumofNumbers == "solution") 
+            let differenceofNumbers = firstNumber - secondNumber;
+            if (differenceofNumbers == solution){
                 message = "Correct! Good job";
-            } else if ("operator" == "*") {
-                let productOfNumbers = "firstNumber" * "secondNumber";
-                if (productOfNumbers == "solution")
+            }
+        } else if ("operator" == "*") {
+            let productOfNumbers = firstNumber * secondNumber;
+            if (productOfNumbers == "solution"){
                     message = "Correct! Good job";
-            } else if ("operator" == "/") {
-                if (secondNumber !== 0)
-                    let dividentOfNumbers = "firstNumber" / "secondNumber";
+                }
+        } else if ("operator" == "/") {
+            if (secondNumber !== 0){
+                let dividentOfNumbers = "firstNumber" / "secondNumber";
                 if (dividentOfNumbers == "solution");
                 message = "Correct! Good job";
+                }
             } else {
-            message = "Please don't try that at home!";
-        }
+                message = "Please don't try that at home!";
+            }
         document.getElementById("output").innerHTML = message;
+        }
     </script>
 </head>
 

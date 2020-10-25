@@ -10,30 +10,30 @@
         * Processing: goes through if/else statements
         * Output: gives correlating shoe, if no shoe found, output is shoes
         */
-        function weatherShoes() {
-            let firstWeather = document.getElementById("hot").value; 
-            let secondWeather = document.getElementById("rain").value; 
-            let thirdWeather = document.getElementById("snow").value; 
-            let solution = document.getElementById("solution").value;
-            let message = "shoes"
+ function weather_Shoes() {
+  let weather=document.getElementById("weather_Input").value;
+          
 
-            if ("hot") {
-                greeting = "sandals";
+            if (weather=="hot") {
+                greeting = "sandals"
             } 
-            if ("rain"){
-                greeting = "galoshes";
+            if (weather=="rain") {
+                greeting = "galoshes"
             }
-            if ("snow"){
-                greeting = "boots"; 
-            }else{
-                greeting = "shoes"; 
+            if (weather=="snow") {
+                greeting = "boots" 
             }
-            document.getElementById("solution").innerHTML = "greeting"; 
+          else if {
+                greeting = "shoes" 
+            }
+ }
+ document.getElementById("solution").innerHTML = greeting; 
         }
     </script>
 </head>
 <body>
-    <input type="text" id="solution">
-    <button type="button" onclick="weatherShoes()">Type of Shoes</button>
+    <input type="text" id="weather_Input">
+    <button type="button" onclick="weather_Shoes()">Type of Shoes</button>
+  <div id="solution"></div>
 </body>
 </html>
