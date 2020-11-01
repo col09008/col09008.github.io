@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Discount Assignment</title>
+    <script>
+         //* Input: Customers Subtotal
+         //* Processing: Subtotal greater that $50 && Tuesday || Wednesday, Subtracts 10%, then add sales tax of 6% to subtotal
+         //* Output: Total amount due
+        function computeDiscount() {
+        var discount; 
+        var subTotal = parseFloat(document.getElementById("subTotalInput").value);
+        var dayOfWeek = new Date().getDay();    
+        if (subTotal > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
+            discount = 0.9; 
+        } else {
+            discount = 1; 
+        }
+        total= subTotal * discount * 1.06
+        document.getElementById('output').innerHTML = total;
+    }
+    </script>
+</head>
+<body>
+    <p>
+     Please put in subtotal amount:   
+    </p> 
+    <input type="text" id="subTotalInput">
+    <button type="button" onclick="computeDiscount()">Total</button>
+    <div id="output"></div>
+</body>
+</html>
