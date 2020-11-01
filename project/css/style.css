@@ -72,7 +72,7 @@ html {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 200px 100px 200px 100px 200px;
     gap: 5%;
   }
   .one {
@@ -85,8 +85,7 @@ html {
   }
    .three {
     grid-column: 2/3;
-    grid-rows: 1/3 
-    border: 1px solid #ccc;
+    grid-row: 1/3;
     padding: 10px;  
   }
   .four {
@@ -104,11 +103,11 @@ html {
     box-shadow: 5px 5px 5px #999;
   }
   .seven{
-    grid column: 1/3;
+    grid-column: 1/3;
     grid-row: 5/6;
   }
   .eight{
-    grid column: 1/3; 
+    grid-column: 1/3; 
     grid-row: 6/7; 
   }
   a:link {
@@ -130,7 +129,7 @@ html {
   .banner-box .img{
      width: 100%;
     height: auto;
-    align: center; 
+    align-self: center; 
   }
   .banner-box .btn{
     position: absolute;
@@ -145,6 +144,7 @@ html {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    align-self: center;
   }
   .banner-box .header {
      position: absolute;
