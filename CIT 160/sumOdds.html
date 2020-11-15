@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /* Input: integer n
+    * Processing: find sum of all odd integers between one & n
+    * Output: sum of all odd integers between one & n
+ */
+ function sumOdds() {
+     var input = parseInt(document.getElementById('nBox').value)
+     var result = 0; 
+     var oddNum = 1; 
+
+    for(; oddNum <= input; oddNum++)
+
+    if (oddNum % 2 !=0) {
+        result = oddNum + result; 
+    }
+ 
+    document.getElementById('outputDiv').innerHTML = result ;
+ }
+</script>
+</head>
+<body>
+ <p>
+   Pick a number. Any number: <input type="text" id="nBox">   
+ </p>
+ <button type="button" onClick="sumOdds()">Is this your number?</button> 
+ <div id="outputDiv"></div>  
+</body>
+</html> 
