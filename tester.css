@@ -1,0 +1,173 @@
+
+body {
+    font-size: 16px;
+    background-color: #ffe1a8;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #c9cba3;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: auto;    
+}
+
+.img1, .img2 {
+    padding: 15px;
+    box-shadow: 20px;
+    border-radius: 1.5rem;
+}
+
+header, nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 1rem;
+}
+
+main p {
+    background-color: #dbc2cf;
+    padding: 10px;
+    border-radius: 1.5rem;
+}
+
+main h2 {
+    background-color: #dbc2cf;
+    color: #885a89;
+    padding: 10px;
+    border-radius: 1.5em;
+}
+
+a:hover {
+    background-color: #88a0a8;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero img {
+    padding-top: 10px;
+    border-radius: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.title1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.p1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left;
+}
+
+.img1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.title2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.p2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+}
+
+.img2 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+.title3 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.p3 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    text-align: left;
+}
+
+.contact {
+    margin-left: 0%;
+}
+
+.social {
+    text-align: right;
+}
+.social img {
+    width: 35px;
+    height: auto;
+    float: right;
+    margin-right: 12px;
+    border-radius: .5rem;
+}
+
+.icon {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.indentS {
+    padding-left: 10px;
+}
+
+.indent {
+    padding-left: 30px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.container2, .container3 {
+    text-align: center;
+}
+
+.logo {
+    padding: 10px;
+    box-shadow: 30px;
+}
+.banner-box .btn{
+  background-color: #aa5551;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
