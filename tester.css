@@ -13,7 +13,6 @@ header {
     background-color: #c9cba3;
     display: flex;
     align-items: center;
-    border-radius: 1rem;
     font-size: 1rem;
 }
 
@@ -22,15 +21,13 @@ header img {
     height: auto;    
 }
 
-.img1, .img2 {
+.temple, .wedding-picture{
     padding: 15px;
-    box-shadow: 20px;
     border-radius: 1.5rem;
 }
 
 header, nav ul {
     display: flex;
-    align-items: center;
     list-style: none;
 }
 
@@ -38,37 +35,32 @@ header nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, cursive;
     display: block;
     padding: 1rem;
 }
 
-main p {
-    background-color: #dbc2cf;
-    padding: 10px;
-    border-radius: 1.5rem;
+.hero{
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
 }
 
-main h2 {
-    background-color: #dbc2cf;
-    color: #885a89;
+main p {
+    background-color: #999;
     padding: 10px;
-    border-radius: 1.5em;
+}
+
+h2 {
+    background-color: #aa5551;
+    color: #000000;
+    padding: 10px;
 }
 
 a:hover {
-    background-color: #88a0a8;
+   color: #98a0a0;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.hero img {
-    padding-top: 10px;
-    border-radius: 1.5rem;
-}
 
 .container {
     display: grid;
@@ -79,47 +71,44 @@ footer {
     text-align: center;
 }
 
-.title1 {
+.home {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.p1 {
+.paragraph-one {
     grid-column: 1/2;
     grid-row: 2/3;
-    text-align: left;
 }
 
-.img1 {
+.temple {
     grid-column: 2/3;
     grid-row: 1/3;
 }
 
-.title2 {
+.wedding-reception {
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-.p2 {
+.paragraph-two {
     grid-column: 2/3;
     grid-row: 4/5;
-    text-align: left;
 }
 
-.img2 {
+.wedding-picture {
     grid-column: 1/2;
     grid-row: 3/5;
 }
 
-.title3 {
+.family-center {
     grid-column: 1/3;
     grid-row: 5/6;
 }
 
-.p3 {
+.paragraph-three {
     grid-column: 1/3;
     grid-row: 6/7;
-    text-align: left;
 }
 
 .contact {
@@ -137,37 +126,20 @@ footer {
     border-radius: .5rem;
 }
 
-.icon {
-    padding-left: 0;
-    display: inline-block;
-}
-
-.indentS {
-    padding-left: 10px;
-}
-
-.indent {
-    padding-left: 30px;
-}
-
 .copyright {
     text-align: center;
+    background-color: #c9cba3;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .container2, .container3 {
     text-align: center;
 }
 
-.logo {
-    padding: 10px;
-    box-shadow: 30px;
-}
-.banner-box .btn{
-  background-color: #aa5551;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 960px;
+    margin: 0 auto;
 }
