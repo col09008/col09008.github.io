@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> "Reservation"</title>
+  <meta name="description" content="Worrying about planning your next temple trip? Come over to Temple Inn & Suites,
+        where we will take of your worldly needs. Call us now at 215-825-9542 to have a babysitter, wedding reception hall, 
+        and wonderful hotel stays all close to select temples.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class=logo><img src="images/temple.png" alt="Temple Icon Logo"></div>
+        <h1>Temple Inn & Suites</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="amenitites.html">Amenitities</a></li>
+        <li><a href="temple-spotlight.html">Spotlight</a></li>
+        <li><a href="#reservations.html">Reservations</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="hero">
+        <img src="images/heroimage.jpg" alt="hotel bed"><br>
+        </div>
+        <div class="home">
+            <h2 class="plan">Plan Your Next Trip</h2>
+        </div>
+        <div class="reserved-image">
+             <img src="images/reserved.jpg" alt="reserves">
+        </div>
+        <div class="form">
+            <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+                <label for="checkin">Check In:</label>
+                <input type="date" id="checkin" name="checkin">
+            </li>
+            <li>
+                <label for="checkout">Check Out:</label>
+                <input type="date" id="checkout" name="checkout">
+            </li>
+            <li>
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" max="5">
+            </li>
+            <li>
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children" min="1" max="5">
+            </li>
+            <li>
+                <label for="msg">Accomodations:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Reserve Now</button>
+            </li>
+        </ul>
+    </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            Temple Inn & Suites Headquarters<br> 
+            355 Wisconsin Avenue<br> 
+            Bethesda, MD 20814<br>
+            215-829-9999<br>
+            info@templeinnandsuites.com
+        </div>
+  <div class=social>
+        <div class="facebook">
+          <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Ffacebook.png?1602301347206" alt="Facebook"></a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Finstagram.png?1602301368507" alt="Instagram"></a>
+        </div>
+        <div class="youtube">
+          <a href="https://www.youtube.com/" target="_blank"><img src="https://cdn.glitch.com/ed66c3d0-0fa1-440b-9031-75af525d2a42%2Fyoutube.png?1602301386367" alt="Youtube"></a>
+        </div>
+      </div>
+
+    </footer>
+    <div class="copyright">
+        <br>
+    &copy;2020 Temple Inn & Suites | <a href="reservations.html">Reservations</a> | Karina Weaver
+        </div>
+
+</body>
+
+</html>
