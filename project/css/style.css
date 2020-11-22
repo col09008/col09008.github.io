@@ -1,151 +1,258 @@
-header {
-  background-color: #c9cba3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 body {
-  background-color: #ffe1a8;
-  max-width: 960px;
-  margin: 0 auto; 
+    font-size: 16px;
+    background-color: #ffe1a8;
 }
 
-p {
-  color: #000000;
-  background-color: #999;
-  font-family: Arial, Helvetica, cursive;
-  text-emphasis: none;
-  margin-right: auto;
-  font-size: 15px;
-  line-height: 200%;
-  padding: 10px
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-nav {
-  background-color: #dcab6b;
-  font-weight: bold;
-  color: black;
-  font-size: 15px;
+header {
+    background-color: #c9cba3;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
 }
-nav a {
-  display: block;
-  padding: 15px 15px 15px 15px;
-  
+
+header img {
+    width: 100px;
+    height: auto;    
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, cursive;
+    display: block;
+    padding: 0.5rem;
+}
+
+
+.hero{
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+main p {
+    background-color: #999;
+    padding: 10px;
 }
 
 h2 {
-  background-color: #aa5551;
-  font-style: italic;
-  font-size: 20px;
-  text-align: left;
-  padding: 10px;
-  border: 1px solid black;
-  margin: 15px 15px 15px 15px;
-  align-items: flex-end;
+    background-color: #aa5551;
+    color: #000000;
+    padding: 10px;
 }
 
-main {
-  background-color: #fff1d6;
-}
-
-img {
-  display: block;
-  border-top: black;
-  border-bottom: black;
-  border-left: black;
-  border-right: black; 
-}
-
-.menu {
-  list-style-type: none;
-  display: flex;
-  margin: 1em;
-}
-
-.motto {
-  font-size: small;
-  text-align: center;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
-}
-.one {
-  grid-column: 1/2;
-  
-}
-.two {
-  grid-column: 1/2;
-
-}
- .three {
-  grid-column: 2/3;
-
-  padding: 10px;  
-}
-.four {
-  grid-column: 2/3;
-}
-.five {
-  grid-column: 2/3;
-}
-.six {
-  grid-column: 1/2;
-  padding: 10px;
-  box-shadow: 5px 5px 5px #999;
-}
-.seven{
-  grid-column: 1/3;
-}
-.eight{
-  grid-column: 1/3;  
-}
-a:link {
-  color: black;
-}
-a:visited {
-  color: #00FF00;
-}
 a:hover {
-  color: red
-}
-a:active {
-  color: #0000FF;
-}
-.banner-box{
-    position: relative;
-}
-.banner-box .img{
-   width: 100%;
-  height: auto;
-  align-self: center;
-   width: 100%;
-}
-.banner-box .btn{
-  background-color: #aa5551;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+   color: #98a0a0;
 }
 
-.banner-box .btn:hover {
-  background-color: black;
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding: 5px;
+    text-align: center;
 }
-@media screen and (max-width: 550px) {
-  .banner-box {
-    display: block;
-  }
+.container-reservations{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 30px;
+        padding: 5px;
+        text-align: center;
 }
-element.style {
- position: absolute; 
- top: 20px; 
- right: 50px; 
+
+.home {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
- footer {
-  display: flex;
+
+.paragraph-one {
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
+.reserved-image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: block;
+        padding-left: 150px;
+
+    }
+
+.temple {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding-top: 30px;
+}
+
+.wedding-reception {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.paragraph-two {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.wedding-picture {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    padding-top: 50px;
+}
+.form {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.family-center {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.paragraph-three {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.contact {
+    margin-left: 0%;
+    padding: 10px 0 10px 10px;
+}
+
+.social {
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+.social img{
+    width: 35px;
+    height: auto;
+    float: right;
+    margin-right: 12px;
+    border-radius: .5rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bullets{
+    list-style: none;
+    background-color: #999;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+.contact, .social{
+    background-color: #c9cba3;
+    align-items: center;
+    font-size: 1rem;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #aa5551;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+between the labels and their text fields */
+    margin-left: .5em;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.feedback {
+    color: green;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+.plan{
+    text-align: center;
 }
