@@ -79,19 +79,16 @@ a:hover {
 
 .home {
     grid-column: 1/2;
-    grid-row: 1/2;
+   
 }
 
 .paragraph-one {
     grid-column: 1/2;
-    grid-row: 2/3;
 }
 .reserved-image{
         grid-column: 1/2;
-        grid-row: 2/3;
         display: block;
         padding-left: 150px;
-
     }
 
 .temple {
@@ -102,12 +99,11 @@ a:hover {
 
 .wedding-reception {
     grid-column: 2/3;
-    grid-row: 3/4;
 }
 
 .paragraph-two {
     grid-column: 2/3;
-    grid-row: 4/5;
+  
 }
 
 .wedding-picture {
