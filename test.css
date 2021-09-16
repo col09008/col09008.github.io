@@ -1,7 +1,0 @@
-.three-col{
-    display: grid;
-    grid-template-columns: 250px 500px 250px;
-    padding: 0 40px 0 40px;
-    margin: 0 40px 0 40px; 
-    align-items: vertical;  
-}
