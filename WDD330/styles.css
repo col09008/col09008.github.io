@@ -1,65 +1,64 @@
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 body {
-    width: 300px;
+  width: 300px;
 }
 
 body {
-    box-sizing: border-box;
-    border: solid;
-    width: 300px;
-    font-family: 'EB Garamond', serif;
-    color:#E2E8DD;
-    background-color: #697268;
+  box-sizing: border-box;
+  border: solid;
+  width: 300px;
+  font-family: 'EB Garamond', serif;
+  color: #E2E8DD;
+  background-color: #697268;
 }
 
 ul li {
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    margin: 0 10px 0 0;
-    list-style-type: none;
-    font-size: 18px;
-    border-style: groove;
-    font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin: 0 10px 0 0;
+  list-style-type: none;
+  font-size: 18px;
+  border-style: groove;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
-
-  ul li.checkMark::before {
-    content: '';
-    position: absolute;
-    border-color: #E2E8DD;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+ul li.checkMark::before {
+  content: '';
+  position: absolute;
+  border-color: #E2E8DD;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }
 
 .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
 }
 
 .footer:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  input {
-    width: 75%;
-    padding: 10px;
-    margin: 10px 0 0 0;
-    float: left;
-    font-size: 16px;
-  }
+input {
+  width: 75%;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  float: left;
+  font-size: 16px;
+}
 
 
 .add {
