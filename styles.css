@@ -25,15 +25,7 @@ body {
     margin-right: auto;
   }
 }
-#contactform fieldset > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
+
 #contactform #content {
   width: 90%;
   max-width: 960px;
@@ -41,4 +33,3 @@ body {
   margin-right: auto;
 }
 
-/*# sourceMappingURL=styles.css.map */

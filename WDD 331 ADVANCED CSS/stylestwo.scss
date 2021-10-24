@@ -1,0 +1,146 @@
+////colors
+$blue-color: #6495ED;
+$peach-color: #DEB887;
+$light-peach-color: #FAEBD7;
+$white-color : white;
+$black-color: black;
+$break-small: 700px;
+$break-large: 900px;
+
+@mixin links($color){
+    color: $color;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 0; 
+    margin: auto;
+}
+header{
+    background: $blue-color;
+    padding: 1rem;
+    text-align: right;
+    
+}
+
+main{
+    background-color: $light-peach-color;
+    grid-area: auto;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+article{
+    background-color:$white-color;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header{
+    a{
+        &:link{
+            text-decoration: none;
+            @include links($light-peach-color);
+        }  
+        &:visited{
+            @include links($light-peach-color);
+    
+        }
+        &:active{
+            @include links($peach-color);
+        }
+        &:hover{
+            @include links($white-color);
+            text-decoration: underline;
+        }
+    }
+} 
+
+
+h1, h2{
+font-family:  'Lora', 'Serif';
+}
+
+li{
+    list-style: none;
+    margin:1.5rem;
+}
+a{
+    &:link{
+        @include links($blue-color);
+        text-decoration: none;
+    }
+    &:visited{
+        @include links($blue-color);
+       text-decoration: none;
+    }
+    &:hover{
+       text-decoration: underline;
+    }
+}
+.post-content{
+    h2{
+        a{
+            &:link{
+                color:$black-color;
+            }
+            &:visited{
+                color:$black-color;
+            }
+            &:active{
+                @include links($peach-color);
+            }
+            &:hover{
+                @include links($blue-color);
+        }
+    } 
+}
+}         
+
+
+.post-date{
+    color: grey;
+}
+
+article figure {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  article img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  //breakpoint
+@media screen and (min-width: 800px){
+    body{
+        div{
+            display: grid;
+            grid-template-columns: 14rem 1fr;  
+        }
+    } 
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 10rem;
+        padding: 2rem;
+      }
+    
+      main {
+        grid-column: 2;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+    
+      article {
+        padding: 3rem;
+        margin: 3rem;
+      }
+    
+      article figure {
+        margin: 3rem auto 0;
+      }
+}

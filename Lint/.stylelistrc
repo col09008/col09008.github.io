@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "declaration-no-important": true
+    }
+}
+{
+    "extends": "/absolute/path/to/stylelint-config-recommended",
+    "rules": {
+       "value-no-vendor-prefix": true
+    }
+}
