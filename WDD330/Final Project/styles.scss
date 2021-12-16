@@ -1,0 +1,44 @@
+$font-family: Helvetica;
+$primary-color: #95b46a;
+$secondary-color: #226f54;
+$text-color: #95b46a;
+
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+}
+
+h1,
+p {
+  text-transform: uppercase;
+}
+
+p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin button($background, $text-color, $font-size) {
+    background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  &:hover {
+     background-color: #3e8e41;
+     color: white;
+     cursor: pointer;
+  }
+  &:active {
+    box-shadow: 0 3em 0 rgba(0, 0, 0, 0.6) inset;
+  }
+}
+
+button {
+  @include button($secondary-color, white, 15px);
+}
+
+

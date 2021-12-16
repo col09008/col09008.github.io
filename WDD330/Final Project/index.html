@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project WDD 330</title>
+</head>
+<body>
+<div id=frontPage>
+    <h1>Veterinary Medicine Drug Calculator</h1>
+    <p>Select a function below:</p>
+    <button onclick="showAdequan()">Adequan Dosage</button><br><br>
+    <button onclick="showDrug()">Drug Dosages</button><br><br>
+    <button onclick="showIv()">IV Bag Supplementation</button>
+  </div>
+  <div id=adequanPage style="display:none">
+    <h3>Adequan Injection Volume Calculation</p>
+    <input placeholder="0" id="adequanInput"></input><select id="adequan_lbs_kg">
+      <option>lbs</option>
+      <option>kg</option>
+  </select> <br><br><button id="adequanSubmit" onclick="adequanSubmit()">Submit</button><br><br>
+  </div>
+  <div id="drugPage" style="display:none">
+    <h3>Drug Dose Calculator</h3>
+    <p>This page will offer dose suggestions and information<br>about various veterinary drugs</p><br>
+    <p><strong>Select a drug:</strong></p>
+    <select id="drugSelector"></select><br>
+    <p><strong>Input patient's weight:</strong></p>
+    <input id="drugWeight"></input><select id="drugUnit">
+      <option>lbs</option>
+      <option>kg</option>
+  </select><br><br><button id="drugSubmit" onclick="drugSubmit()">Submit</button><br><br>
+  </div>
+  <div id="ivPage" style="display:none">
+    <h3>IV Bag Supplementation</h3>
+    <p>This page will compute what volume of solute to add to a bag of diluent to reach a desired concentration.</p>
+    <p><strong>Concentration of Solute:</strong></p>
+    <input id="solConc" placeholder=0>mg/mL</input> 
+    <p><strong>Volume of Bag:</strong></p>
+  <input id="bagVol" value="1000">mL</input>
+  <p><strong>Final Concentration Required:</strong></p>
+  <input id="bagConc" placeholder=0>mg/mL</input><br><br><br>
+  <button id="ivSubmit" onclick="ivSubmit()">Submit</button>
+  </div><br>
+  <p id="output"></p><br>
+  <button onclick="home()">Home</button>
+</body>
+</html>
